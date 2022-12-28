@@ -1,0 +1,35 @@
+{
+  "name": "@zheqi/eslint-config",
+  "version": "1.0.2",
+  "description": "eslint config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "author": "zhe-qi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhe-qi/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@zheqi/eslint-plugin": "workspace:*"
+  }
+}
